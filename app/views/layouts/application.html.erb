@@ -21,14 +21,17 @@
         <li>
           <%= link_to 'Home' , root_path, class:'nav-link px-2 text-white'%>
         </li>
-        <li>
-          <%= link_to 'New question' , new_question_path, class:'nav-link px-2 text-white'%>
-        </li>
       </ul>
     </nav>
     </div>
     </header>
+
     <main class="container mt-3">
+      <% flash.each do |k,v|%>
+      <div class="alert alert-<%=k%>">
+        <%=v %>
+      </div>
+      <%end%>
    <%= yield %>
     </main>
   </body>
