@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   before_action :set_question!
   before_action :set_answer!, except: :create
@@ -18,14 +20,12 @@ class AnswersController < ApplicationController
     if @answer.update answer_params
       flash[:success] = 'Answer updated!'
       redirect_to question_path(@question)
-      else
-        render :edit
+    else
+      render :edit
     end
   end
 
-  def edit
-
-  end
+  def edit; end
 
   def destroy
     @answer.destroy
