@@ -105,6 +105,8 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -162,6 +164,7 @@ GEM
     parser (3.3.0.5)
       ast (~> 2.4.1)
       racc
+    prism (0.24.0)
     psych (5.1.2)
       stringio
     public_suffix (5.0.4)
@@ -226,6 +229,10 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.30.0)
       parser (>= 3.2.1.0)
+    ruby-lsp (0.14.3)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.22.0, < 0.25)
+      sorbet-runtime (>= 0.5.10782)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -234,6 +241,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sorbet-runtime (0.5.11274)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -286,11 +294,13 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  faker (~> 2)
   importmap-rails
   jbuilder
   puma (>= 5.0)
   rails (~> 7.1.3)
   rubocop
+  ruby-lsp
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

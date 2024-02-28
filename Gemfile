@@ -25,13 +25,14 @@ gem 'turbo-rails'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
-gem 'rubocop'
-
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem 'cssbundling-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'faker', '~> 2'
 gem 'jbuilder'
+gem 'rubocop'
+gem 'ruby-lsp'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
